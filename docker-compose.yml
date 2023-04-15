@@ -1,0 +1,11 @@
+services:
+  kopia:
+    image: ghcr.io/jonohill/kopia-tailscale:latest
+    environment:
+      - KOPIA_PASSWORD=${KOPIA_PASSWORD}
+      - KOPIA_SERVER_PASSWORD=${KOPIA_SERVER_PASSWORD}
+      - TS_AUTH_KEY=${TS_AUTH_KEY}
+      - TS_HOSTNAME=kopia-test
+    volumes:
+      - /tmp/kopia-test/data:/data
+      - /tmp/kopia-test/config:/config
