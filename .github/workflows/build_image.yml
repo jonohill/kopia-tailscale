@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  packages: write
+
 env:
   DOCKER_REGISTRY: ghcr.io/jonohill
   DOCKER_REPO: kopia-tailscale
