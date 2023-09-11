@@ -8,7 +8,7 @@ RUN apk add --no-cache \
 RUN mkdir -p /usr/share/keyrings && curl -fsSL https://kopia.io/signing-key | gpg --dearmor -o /usr/share/keyrings/kopia-keyring.gpg
 
 # renovate: datasource=github-releases depName=rclone/rclone
-ARG RCLONE_VERSION=v1.63.1
+ARG RCLONE_VERSION=v1.64.0
 
 ARG TARGETPLATFORM
 
