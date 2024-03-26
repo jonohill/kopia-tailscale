@@ -35,7 +35,7 @@ RUN curl -fsSL https://pkgs.tailscale.com/stable/debian/bullseye.noarmor.gpg | t
 FROM debian:12.5-slim
 
 # renovate: datasource=github-releases depName=kopia/kopia
-ARG KOPIA_VERSION=0.16.0
+ARG KOPIA_VERSION=0.16.1
 
 ENV DEBIAN_FRONTEND="noninteractive" \
     TERM="xterm-256color" \
