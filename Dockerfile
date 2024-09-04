@@ -32,7 +32,7 @@ RUN case $TARGETPLATFORM in \
 RUN curl -fsSL https://pkgs.tailscale.com/stable/debian/bullseye.noarmor.gpg | tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null && \
     mkdir -p /etc/apt/sources.list.d && curl -fsSL https://pkgs.tailscale.com/stable/debian/bullseye.tailscale-keyring.list | tee /etc/apt/sources.list.d/tailscale.list
 
-FROM debian:12.6-slim
+FROM debian:12.7-slim
 
 # renovate: datasource=github-releases depName=kopia/kopia
 ARG KOPIA_VERSION=0.17.0
